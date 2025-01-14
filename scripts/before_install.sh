@@ -1,6 +1,9 @@
 #!/bin/bash
 set -e
 
+sudo mkdir -p /var/cache/apt/archives/partial
+sudo chown -R _apt:root /var/cache/apt/archives
+
 # Webserver install and configure.
 sudo apt update -y
 
