@@ -1,12 +1,13 @@
 #!/bin/bash
-set -e 
+set -e
 
 # Webserver install and configure.
-sudo yum update -y
+sudo apt update -y
 
-sudo yum update -y
-sudo yum install -y httpd
+# Install Apache web server
+sudo apt install -y apache2
 
-# Start and enable the httpd service
-sudo systemctl start httpd
-sudo systemctl enable httpd
+# Start and enable the apache2 service
+sudo systemctl start apache2
+sudo systemctl enable apache2
+
