@@ -4,6 +4,9 @@ set -e
 sudo mkdir -p /var/cache/apt/archives/partial
 sudo chown -R _apt:root /var/cache/apt/archives
 
+sudo rm -rf /var/lib/dpkg/lock-frontend
+sudo rm -rf /var/lib/dpkg/lock-frontend
+
 # Webserver install and configure.
 sudo apt update -y
 
